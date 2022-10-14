@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ICONS HUB Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/web-logo-icon.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i> 
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="co-working-space.html">CO-WORKING SPACE</a></li>
+                        <li><a href="subscriptions.html">SUBSCRIPTIONS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="bookings.html">BOOKINGS</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+            <h1>SUBSCRIPTIONS</h1>
+
+        </section>
+
+<!-----Subscriptions---->
+<section class="Subscriptions">
+    <div class="container">
+        <h2>Choose Your Plan (MONTHLY)</h2>
+        <div class="price-row">
+            <div class="price-col">
+                <p>Starter</p>
+                <h3>Ksh.3000 <span>/ month</span></h3>
+                <ul>
+                    <li>Unlimited Free Internet</li>
+                    <li>Access to work stations and space</li>
+                    <li>Online support</li>
+                    <li>Customer support</li>
+                </ul>
+                <button>SUBSCRIBE</button>
+            </div>
+            <div class="price-col">
+                <p>Standard</p>
+                <h3>Ksh.5000 <span>/ month</span></h3>
+                <ul>
+                    <li>Unlimited Free Internet</li>
+                    <li>Access to work stations and space</li>
+                    <li>Access to offices and boardrooms for up to 4hrs a day</li>
+                    <li>Online support</li>
+                    <li>Customer support</li>
+                </ul>
+                <button>SUBSCRIBE</button>
+            </div>
+            <div class="price-col">
+                <p>Ultimate Pro</p>
+                <h3>Ksh.10000 <span>/ month</span></h3>
+                <ul>
+                    <li>Unlimited Free Internet</li>
+                    <li>Unlimited access to offices and boardrooms</li>
+                    <li>Access to work stations and space</li>
+                    <li>Online support</li>
+                    <li>Customer support</li>
+                </ul>
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-----Footer----->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>"I Have a Dream" is a public speech that was delivered by American civil rights activist and Baptist minister, <br>
+        Luther King Jr., during the March on Washington for Jobs and Freedom on August 28, 1963 <br>
+        Copyright @ICONS 2022 all rights reserved. 
+    </p>
+    <div class="icons">
+        <a href="https://web.facebook.com/iconshubke"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/iCONSHUB2?t=vpGBsBURrlkak-h_3lQelg&s=09"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com/icons_hub?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p> Made by <i class="fa fa-twitter"> @Wesley_wesree</i></p>
+</section>
+
+
+<!-----JScript for the Menu(Small Screen)----->
+    <script>
+        var navlinks = document.getElementById("navLinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+</html>
