@@ -1,0 +1,128 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.M.A website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- i will provide this in description  -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/select2-bootstrap4.min.css" />
+  
+    <link rel="stylesheet" href="css/slick-animation.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+<header class="showcase">
+    <div class="showcase-top">
+        <img src="images/KSU Logo.png" alt="" />
+        <a href="#" class="btn btn-link" data-toggle="modal" data-target="#register-modal">Sign In</a>
+    </div>
+    <div class="showcase-content">
+        <h1>START YOUR JOURNEY NOW</h1>
+        <p>Watch anywhere. Cancel Anytime</p>
+        <br>
+        <br>
+        <a href="index.html" class="btn btn-hover iq-button">CREATE ACCOUNT ></a>
+    </div>
+</header>
+
+
+<body>
+    <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Book Your Space For The Bananaday</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-fluid" src="images/KSU Logo.png">
+					<form class="p-2" onsubmit="return registerUser()">
+						<div class="form-group">
+							<label for="Name">Your Name</label>
+							<input class="form-control" placeholder="e.g Wesley Ochieng" id="Name">
+						</div>
+						<div class="form-group">
+							<label for="Phone">Your Phone Number</label>
+							<input class="form-control" placeholder="e.g 07xxx or 01xxx" type="tel" maxlength="10" minlength="10" id="Phone">
+						</div>
+						<div class="form-group">
+							<label for="Role">Your Role</label>
+							<select class="form-control" id="Role">
+								<option value="Participant">Attendee</option>
+								<option value="Sponsor">Convenor</option>
+								<option value="Other">Volunteer</option>
+							</select>
+						</div>
+						<div class="modal-footer text-center">
+							<div class="row w-100 d-flex justify-content-center">
+								<h6 class="h6">
+									Which activities would you like to participate in?
+								</h6>
+							</div>
+
+							<div class="row d-flex w-100 justify-content-between p-2">
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="health" value="5KM Health Walk">
+									<label for="health" class="form-check-label">Banana Walk</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="funday" value="Family Funday">
+									<label for="funday" class="form-check-label">Banana Funday</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="feast" value="Banana Feast">
+									<label for="feast" class="form-check-label">Banana Feast</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="expo" value="Startup Expo">
+									<label for="expo" class="form-check-label">Banana Startup Expo</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="exhibitions" value="Exhibitions">
+									<label for="exhibitions" class="form-check-label">Banana Exhibition</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="auction" value="Banana Auctions">
+									<label for="auction" class="form-check-label">Banana Auction</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="e-market" value="Banana eMarket Day">
+									<label for="e-market" class="form-check-label">Banana eMarket</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="anniversary" value="Banana Anniversary">
+									<label for="anniversary" class="form-check-label">Banana Anniversary</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="talent" value="Talent Show">
+									<label for="talent" class="form-check-label">Talent Show</label>
+								</div>
+								<div class="form-group form-check col-md-4">
+									<input type="checkbox" class="form-check-input" id="bootcamp" value="Kids Bootcamp">
+									<label for="bootcamp" class="form-check-label">Kids BootCamp</label>
+								</div>
+
+
+							</div>
+
+
+
+
+						</div>
+						<button class="btn btn-dark text-warning w-100 p-3 m-2" type="button" role="button" onclick="registerUser()">Register</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+    <script type="module" src="js/form.js"></script>
+</body>
